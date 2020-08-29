@@ -6,6 +6,7 @@ import 'row_and_column.dart';
 import 'stack_and_flexible.dart';
 import 'text_rich_text.dart';
 import 'text_field.dart';
+import 'restful_api.dart';
 
 class Router {
   static const String homeRoute = '/';
@@ -15,6 +16,7 @@ class Router {
   static const String textFieldRoute = '/textField';
   static const String routesAndNavigationRoute = '/routesAndNavigation';
   static const String routesAndNavigation2Route = '/routesAndNavigation2';
+  static const String restfulApiRoute = '/restfulApi';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -43,6 +45,10 @@ class Router {
       case routesAndNavigation2Route:
         return MaterialPageRoute(
             builder: (_) => RouteAndNavigationPage2(settings.arguments));
+
+      case restfulApiRoute:
+        return MaterialPageRoute(
+            builder: (_) => RestfulApiPage(settings.arguments));
 
       default:
         return MaterialPageRoute(

@@ -86,9 +86,9 @@ class _HomePageState extends State<HomePage> {
           'Checkbox, RadioButton, Slider, ProgressBar',
           Router.stackAndFlexibleRoute),
       HomePageItem.withNameAndRoute(
-          'ListView, GridView, Gallery', Router.stackAndFlexibleRoute),
-      HomePageItem.withNameAndRoute(
           'Routes & Navigation', Router.routesAndNavigationRoute),
+      HomePageItem.withNameAndRoute(
+          'RESTful, ListView', Router.restfulApiRoute),
     ];
   }
 
