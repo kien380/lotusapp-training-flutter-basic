@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'main.dart';
+import '../main.dart';
 import 'row_and_column.dart';
 import 'stack_and_flexible.dart';
 import 'text_rich_text.dart';
